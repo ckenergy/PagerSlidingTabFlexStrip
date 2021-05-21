@@ -3,22 +3,46 @@
 
     <!-- 滑动tab栏 -->
     <declare-styleable name="PagerSlidingTabStrip">
+        <!--下标的颜色-->
         <attr name="pstsIndicatorColor" format="color"/>
-        <attr name="pstsUnderlineColor" format="color"/>
-        <attr name="pstsDividerColor" format="color"/>
+        <!--下标的高度-->
         <attr name="pstsIndicatorHeight" format="dimension"/>
-        <attr name="pstsUnderlineHeight" format="dimension"/>
-        <attr name="pstsDividerPadding" format="dimension"/>
+        <!--左右边距-->
         <attr name="pstsTabPaddingLeftRight" format="dimension"/>
+
         <attr name="pstsScrollOffset" format="dimension"/>
+        <!--tab背景-->
         <attr name="pstsTabBackground" format="reference"/>
+        <!--平分布局-->
         <attr name="pstsShouldExpand" format="boolean"/>
+        <!--大写-->
         <attr name="pstsTextAllCaps" format="boolean"/>
+        <!--下标是否和tab一样长-->
         <attr name="pstsDividerExpand" format="boolean"/>
+        <!--下标和底部的高度-->
         <attr name="pstsDividerPaddingBottom" format="dimension"/>
+        <!--下标的宽度-->
         <attr name="pstsDividerWidth" format="dimension"/>
+        <!--下标伸缩的长度-->
         <attr name="pstsDividerFlexLength" format="dimension"/>
+        <!--下标滑动的时候是否可伸缩-->
         <attr name="pstsDividerNeedFlex" format="boolean"/>
+        <!--默认字体大小-->
+        <attr name="pstsTextSize" format="dimension"/>
+        <!--选种时字体大小-->
+        <attr name="pstsSelectTextSize" format="dimension"/>
+        <!--下标的圆角大小-->
+        <attr name="pstsDividerRadius" format="dimension"/>
+        <!--字体选中的颜色-->
+        <attr name="pstsSelectText" format="color"/>
+        <!--字体默认的颜色-->
+        <attr name="pstsNormalText" format="color"/>
+        <!-- 设置字体加粗 -->
+        <attr name="pstsTextBold" format="enum">
+            <enum name="NONE" value="0" />
+            <enum name="SELECT" value="1" />
+            <enum name="BOTH" value="2" />
+        </attr>
     </declare-styleable>
 
 </resources>

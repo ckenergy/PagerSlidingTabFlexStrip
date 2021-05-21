@@ -14,21 +14,46 @@
         android:layout_height="44dp"
         android:layout_gravity="center"
         android:background="@color/white"
-        android:textSize="15dp"
-        app:pstsIndicatorColor="@color/colorAccent"
-        app:pstsIndicatorHeight="2dp"
-        app:pstsShouldExpand="true"
-        app:pstsUnderlineColor="@color/colorAccent"
+        app:pstsTabPaddingLeftRight="16dp"
         app:pstsDividerExpand="false"
-        app:pstsDividerWidth="15dp"
-        app:pstsDividerPaddingBottom="7dp"
-        app:pstsDividerFlexLength="80dp"
         app:pstsDividerNeedFlex="true"
-        app:pstsUnderlineHeight="0dp"/>
+        app:pstsDividerPaddingBottom="0dp"
+        app:pstsDividerWidth="25dp"
+        app:pstsIndicatorColor="#6D89FF"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsNormalText="#b5b5b5"
+        app:pstsSelectText="#333333"
+        app:pstsShouldExpand="false"
+        app:pstsTextBold="SELECT"/>
 
     <com.cc.navigation.MyViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+    <com.cc.navigation.PagerSlidingTabStrip2
+        android:id="@+id/main_tabs1"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        app:pstsTabPaddingLeftRight="16dp"
+        app:pstsDividerExpand="false"
+        app:pstsDividerNeedFlex="true"
+        app:pstsDividerPaddingBottom="0dp"
+        app:pstsDividerWidth="25dp"
+        app:pstsIndicatorColor="#6D89FF"
+        app:pstsIndicatorHeight="3dp"
+        app:pstsNormalText="#b5b5b5"
+        app:pstsSelectText="#333333"
+        app:pstsShouldExpand="false"
+        app:pstsTextBold="SELECT"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewpager1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
 
 </LinearLayout>
